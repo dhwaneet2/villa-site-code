@@ -32,10 +32,10 @@ export function HeroSection({ onRequestAccess }: HeroSectionProps) {
         <div
           className="w-full h-full bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1757439402375-2f2a4ab0dc75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB2aWxsYSUyMG5pZ2h0JTIwbGlnaHRzfGVufDF8fHx8MTc3MDAzNDk5MXww&ixlib=rb-4.1.0&q=80&w=1080')`,
+            backgroundImage: `url('/hero-bg-2.jpg')`,
           }}
         >
-          <div className="absolute inset-0 bg-black/70" />
+          <div className="absolute inset-0 bg-black/55" />
         </div>
       </motion.div>
 
@@ -45,7 +45,7 @@ export function HeroSection({ onRequestAccess }: HeroSectionProps) {
         style={{ opacity }}
       >
         <motion.h1
-          className="text-5xl md:text-7xl lg:text-8xl mb-6 tracking-[0.15em]"
+          className="text-5xl md:text-7xl lg:text-8xl mb-6 tracking-[0.15em] drop-shadow-2xl"
           style={{ fontFamily: 'Playfair Display, serif' }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ export function HeroSection({ onRequestAccess }: HeroSectionProps) {
         </motion.h1>
 
         <motion.p
-          className="text-xs md:text-sm tracking-[0.4em] text-[#B3B3B3] mb-2"
+          className="text-xs md:text-sm tracking-[0.4em] text-white drop-shadow-md mb-2 font-medium"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
